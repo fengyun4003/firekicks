@@ -14,312 +14,326 @@
 
   <body>
 
-    <header>
-      <a href="index.html">
-        <h1>Photo Gallery</h1>
-      </a>
-    </header>
+    <div>
     
-    <!--
-      Breadcrumbs of parent albums
-    -->
+      <!--
+        Gallery title
+      -->
+      <header style="color: #17baef;">
+        <h1><a href="index.html">Photo Gallery</a></h1>
+      </header>
+    
+      <!--
+        Breadcrumbs of parent albums
+      -->
+    
       <nav class="breadcrumbs">
-    <a class="breadcrumb-item" href="index.html">Home</a>&nbsp;&nbsp;/&nbsp;&nbsp;<a class="breadcrumb-item" href="Men_12.html">Men_12</a>
+        <div class="mask"></div>
+    <a class="breadcrumb-item" href="index.html">Home</a>
+          <span class="separator">&gt;</span><a class="breadcrumb-item" href="Men_12.html">Men_12</a>
       </nav>
     
-    <!--
-      Nested albums
-    -->
-    <ul id="galleries">
-    </ul>
+      <!--
+        Main gallery panel
+      -->
+      <section id="content">
     
-    <!--
-      Render all thumbnails
-    -->
-    <ul id="media">
-        
-          <li data-src="media/large/Men_12/IMG_0012.JPG"
-              data-sub-html=""
-              data-download-url="media/original/Men_12/IMG_0012.JPG"
-              
-              data-filename="IMG_0012.JPG"
-        
-            >
-            <a href="media/original/Men_12/IMG_0012.JPG">
-              <img src="media/thumbs/Men_12/IMG_0012.JPG"
-                   width="120"
-                   height="120"
-                   alt="IMG_0012.JPG" />
-            </a>
-          </li>    
-          <li data-src="media/large/Men_12/IMG_0021.JPG"
-              data-sub-html=""
-              data-download-url="media/original/Men_12/IMG_0021.JPG"
-              
-              data-filename="IMG_0021.JPG"
-        
-            >
-            <a href="media/original/Men_12/IMG_0021.JPG">
-              <img src="media/thumbs/Men_12/IMG_0021.JPG"
-                   width="120"
-                   height="120"
-                   alt="IMG_0021.JPG" />
-            </a>
-          </li>    
-          <li data-src="media/large/Men_12/IMG_0092.JPG"
-              data-sub-html=""
-              data-download-url="media/original/Men_12/IMG_0092.JPG"
-              
-              data-filename="IMG_0092.JPG"
-        
-            >
-            <a href="media/original/Men_12/IMG_0092.JPG">
-              <img src="media/thumbs/Men_12/IMG_0092.JPG"
-                   width="120"
-                   height="120"
-                   alt="IMG_0092.JPG" />
-            </a>
-          </li>    
-          <li data-src="media/large/Men_12/IMG_0184.JPG"
-              data-sub-html=""
-              data-download-url="media/original/Men_12/IMG_0184.JPG"
-              
-              data-filename="IMG_0184.JPG"
-        
-            >
-            <a href="media/original/Men_12/IMG_0184.JPG">
-              <img src="media/thumbs/Men_12/IMG_0184.JPG"
-                   width="120"
-                   height="120"
-                   alt="IMG_0184.JPG" />
-            </a>
-          </li>    
-          <li data-src="media/large/Men_12/IMG_0639.JPG"
-              data-sub-html=""
-              data-download-url="media/original/Men_12/IMG_0639.JPG"
-              
-              data-filename="IMG_0639.JPG"
-        
-            >
-            <a href="media/original/Men_12/IMG_0639.JPG">
-              <img src="media/thumbs/Men_12/IMG_0639.JPG"
-                   width="120"
-                   height="120"
-                   alt="IMG_0639.JPG" />
-            </a>
-          </li>    
-          <li data-src="media/large/Men_12/IMG_0808.PNG"
-              data-sub-html=""
-              data-download-url="media/original/Men_12/IMG_0808.PNG"
-              
-              data-filename="IMG_0808.PNG"
-        
-            >
-            <a href="media/original/Men_12/IMG_0808.PNG">
-              <img src="media/thumbs/Men_12/IMG_0808.PNG"
-                   width="120"
-                   height="120"
-                   alt="IMG_0808.PNG" />
-            </a>
-          </li>    
-          <li data-src="media/large/Men_12/IMG_0915.JPG"
-              data-sub-html=""
-              data-download-url="media/original/Men_12/IMG_0915.JPG"
-              
-              data-filename="IMG_0915.JPG"
-        
-            >
-            <a href="media/original/Men_12/IMG_0915.JPG">
-              <img src="media/thumbs/Men_12/IMG_0915.JPG"
-                   width="120"
-                   height="120"
-                   alt="IMG_0915.JPG" />
-            </a>
-          </li>    
-          <li data-src="media/large/Men_12/IMG_1025.JPG"
-              data-sub-html=""
-              data-download-url="media/original/Men_12/IMG_1025.JPG"
-              
-              data-filename="IMG_1025.JPG"
-        
-            >
-            <a href="media/original/Men_12/IMG_1025.JPG">
-              <img src="media/thumbs/Men_12/IMG_1025.JPG"
-                   width="120"
-                   height="120"
-                   alt="IMG_1025.JPG" />
-            </a>
-          </li>    
-          <li data-src="media/large/Men_12/IMG_1240.JPG"
-              data-sub-html=""
-              data-download-url="media/original/Men_12/IMG_1240.JPG"
-              
-              data-filename="IMG_1240.JPG"
-        
-            >
-            <a href="media/original/Men_12/IMG_1240.JPG">
-              <img src="media/thumbs/Men_12/IMG_1240.JPG"
-                   width="120"
-                   height="120"
-                   alt="IMG_1240.JPG" />
-            </a>
-          </li>    
-          <li data-src="media/large/Men_12/IMG_1242.JPG"
-              data-sub-html=""
-              data-download-url="media/original/Men_12/IMG_1242.JPG"
-              
-              data-filename="IMG_1242.JPG"
-        
-            >
-            <a href="media/original/Men_12/IMG_1242.JPG">
-              <img src="media/thumbs/Men_12/IMG_1242.JPG"
-                   width="120"
-                   height="120"
-                   alt="IMG_1242.JPG" />
-            </a>
-          </li>    
-          <li data-src="media/large/Men_12/IMG_1245.JPG"
-              data-sub-html=""
-              data-download-url="media/original/Men_12/IMG_1245.JPG"
-              
-              data-filename="IMG_1245.JPG"
-        
-            >
-            <a href="media/original/Men_12/IMG_1245.JPG">
-              <img src="media/thumbs/Men_12/IMG_1245.JPG"
-                   width="120"
-                   height="120"
-                   alt="IMG_1245.JPG" />
-            </a>
-          </li>    
-          <li data-src="media/large/Men_12/IMG_1426.JPG"
-              data-sub-html=""
-              data-download-url="media/original/Men_12/IMG_1426.JPG"
-              
-              data-filename="IMG_1426.JPG"
-        
-            >
-            <a href="media/original/Men_12/IMG_1426.JPG">
-              <img src="media/thumbs/Men_12/IMG_1426.JPG"
-                   width="120"
-                   height="120"
-                   alt="IMG_1426.JPG" />
-            </a>
-          </li>    
-          <li data-src="media/large/Men_12/IMG_1509.JPG"
-              data-sub-html=""
-              data-download-url="media/original/Men_12/IMG_1509.JPG"
-              
-              data-filename="IMG_1509.JPG"
-        
-            >
-            <a href="media/original/Men_12/IMG_1509.JPG">
-              <img src="media/thumbs/Men_12/IMG_1509.JPG"
-                   width="120"
-                   height="120"
-                   alt="IMG_1509.JPG" />
-            </a>
-          </li>    
-          <li data-src="media/large/Men_12/IMG_1568.JPG"
-              data-sub-html=""
-              data-download-url="media/original/Men_12/IMG_1568.JPG"
-              
-              data-filename="IMG_1568.JPG"
-        
-            >
-            <a href="media/original/Men_12/IMG_1568.JPG">
-              <img src="media/thumbs/Men_12/IMG_1568.JPG"
-                   width="120"
-                   height="120"
-                   alt="IMG_1568.JPG" />
-            </a>
-          </li>    
-          <li data-src="media/large/Men_12/IMG_1629.JPG"
-              data-sub-html=""
-              data-download-url="media/original/Men_12/IMG_1629.JPG"
-              
-              data-filename="IMG_1629.JPG"
-        
-            >
-            <a href="media/original/Men_12/IMG_1629.JPG">
-              <img src="media/thumbs/Men_12/IMG_1629.JPG"
-                   width="120"
-                   height="120"
-                   alt="IMG_1629.JPG" />
-            </a>
-          </li>    
-          <li data-src="media/large/Men_12/IMG_1707.JPG"
-              data-sub-html=""
-              data-download-url="media/original/Men_12/IMG_1707.JPG"
-              
-              data-filename="IMG_1707.JPG"
-        
-            >
-            <a href="media/original/Men_12/IMG_1707.JPG">
-              <img src="media/thumbs/Men_12/IMG_1707.JPG"
-                   width="120"
-                   height="120"
-                   alt="IMG_1707.JPG" />
-            </a>
-          </li>    
-          <li data-src="media/large/Men_12/IMG_1879.JPG"
-              data-sub-html=""
-              data-download-url="media/original/Men_12/IMG_1879.JPG"
-              
-              data-filename="IMG_1879.JPG"
-        
-            >
-            <a href="media/original/Men_12/IMG_1879.JPG">
-              <img src="media/thumbs/Men_12/IMG_1879.JPG"
-                   width="120"
-                   height="120"
-                   alt="IMG_1879.JPG" />
-            </a>
-          </li>    
-          <li data-src="media/large/Men_12/IMG_1890.JPG"
-              data-sub-html=""
-              data-download-url="media/original/Men_12/IMG_1890.JPG"
-              
-              data-filename="IMG_1890.JPG"
-        
-            >
-            <a href="media/original/Men_12/IMG_1890.JPG">
-              <img src="media/thumbs/Men_12/IMG_1890.JPG"
-                   width="120"
-                   height="120"
-                   alt="IMG_1890.JPG" />
-            </a>
-          </li>    
-          <li data-src="media/large/Men_12/IMG_E7883.JPG"
-              data-sub-html=""
-              data-download-url="media/original/Men_12/IMG_E7883.JPG"
-              
-              data-filename="IMG_E7883.JPG"
-        
-            >
-            <a href="media/original/Men_12/IMG_E7883.JPG">
-              <img src="media/thumbs/Men_12/IMG_E7883.JPG"
-                   width="120"
-                   height="120"
-                   alt="IMG_E7883.JPG" />
-            </a>
-          </li></ul>
+        <!--
+          Nested albums, if any
+        -->
+        <ul id="albums">
+        </ul>
     
-    <!--
-      Pagination
-    -->
+        <!--
+          All photos and videos
+        -->
+        <ul id="media">
+            
+              <li data-src="media/large/Men_12/IMG_0012.JPG"
+                  data-sub-html=""
+                  data-download-url="media/original/Men_12/IMG_0012.JPG"
+                  
+                  data-filename="IMG_0012.JPG"
+            
+                >
+                <a href="media/original/Men_12/IMG_0012.JPG">
+                  <img src="media/thumbs/Men_12/IMG_0012.JPG"
+                       width="120"
+                       height="120"
+                       alt="IMG_0012.JPG" />
+                </a>
+              </li>        
+              <li data-src="media/large/Men_12/IMG_0021.JPG"
+                  data-sub-html=""
+                  data-download-url="media/original/Men_12/IMG_0021.JPG"
+                  
+                  data-filename="IMG_0021.JPG"
+            
+                >
+                <a href="media/original/Men_12/IMG_0021.JPG">
+                  <img src="media/thumbs/Men_12/IMG_0021.JPG"
+                       width="120"
+                       height="120"
+                       alt="IMG_0021.JPG" />
+                </a>
+              </li>        
+              <li data-src="media/large/Men_12/IMG_0092.JPG"
+                  data-sub-html=""
+                  data-download-url="media/original/Men_12/IMG_0092.JPG"
+                  
+                  data-filename="IMG_0092.JPG"
+            
+                >
+                <a href="media/original/Men_12/IMG_0092.JPG">
+                  <img src="media/thumbs/Men_12/IMG_0092.JPG"
+                       width="120"
+                       height="120"
+                       alt="IMG_0092.JPG" />
+                </a>
+              </li>        
+              <li data-src="media/large/Men_12/IMG_0184.JPG"
+                  data-sub-html=""
+                  data-download-url="media/original/Men_12/IMG_0184.JPG"
+                  
+                  data-filename="IMG_0184.JPG"
+            
+                >
+                <a href="media/original/Men_12/IMG_0184.JPG">
+                  <img src="media/thumbs/Men_12/IMG_0184.JPG"
+                       width="120"
+                       height="120"
+                       alt="IMG_0184.JPG" />
+                </a>
+              </li>        
+              <li data-src="media/large/Men_12/IMG_0639.JPG"
+                  data-sub-html=""
+                  data-download-url="media/original/Men_12/IMG_0639.JPG"
+                  
+                  data-filename="IMG_0639.JPG"
+            
+                >
+                <a href="media/original/Men_12/IMG_0639.JPG">
+                  <img src="media/thumbs/Men_12/IMG_0639.JPG"
+                       width="120"
+                       height="120"
+                       alt="IMG_0639.JPG" />
+                </a>
+              </li>        
+              <li data-src="media/large/Men_12/IMG_0808.PNG"
+                  data-sub-html=""
+                  data-download-url="media/original/Men_12/IMG_0808.PNG"
+                  
+                  data-filename="IMG_0808.PNG"
+            
+                >
+                <a href="media/original/Men_12/IMG_0808.PNG">
+                  <img src="media/thumbs/Men_12/IMG_0808.PNG"
+                       width="120"
+                       height="120"
+                       alt="IMG_0808.PNG" />
+                </a>
+              </li>        
+              <li data-src="media/large/Men_12/IMG_0915.JPG"
+                  data-sub-html=""
+                  data-download-url="media/original/Men_12/IMG_0915.JPG"
+                  
+                  data-filename="IMG_0915.JPG"
+            
+                >
+                <a href="media/original/Men_12/IMG_0915.JPG">
+                  <img src="media/thumbs/Men_12/IMG_0915.JPG"
+                       width="120"
+                       height="120"
+                       alt="IMG_0915.JPG" />
+                </a>
+              </li>        
+              <li data-src="media/large/Men_12/IMG_1025.JPG"
+                  data-sub-html=""
+                  data-download-url="media/original/Men_12/IMG_1025.JPG"
+                  
+                  data-filename="IMG_1025.JPG"
+            
+                >
+                <a href="media/original/Men_12/IMG_1025.JPG">
+                  <img src="media/thumbs/Men_12/IMG_1025.JPG"
+                       width="120"
+                       height="120"
+                       alt="IMG_1025.JPG" />
+                </a>
+              </li>        
+              <li data-src="media/large/Men_12/IMG_1240.JPG"
+                  data-sub-html=""
+                  data-download-url="media/original/Men_12/IMG_1240.JPG"
+                  
+                  data-filename="IMG_1240.JPG"
+            
+                >
+                <a href="media/original/Men_12/IMG_1240.JPG">
+                  <img src="media/thumbs/Men_12/IMG_1240.JPG"
+                       width="120"
+                       height="120"
+                       alt="IMG_1240.JPG" />
+                </a>
+              </li>        
+              <li data-src="media/large/Men_12/IMG_1242.JPG"
+                  data-sub-html=""
+                  data-download-url="media/original/Men_12/IMG_1242.JPG"
+                  
+                  data-filename="IMG_1242.JPG"
+            
+                >
+                <a href="media/original/Men_12/IMG_1242.JPG">
+                  <img src="media/thumbs/Men_12/IMG_1242.JPG"
+                       width="120"
+                       height="120"
+                       alt="IMG_1242.JPG" />
+                </a>
+              </li>        
+              <li data-src="media/large/Men_12/IMG_1245.JPG"
+                  data-sub-html=""
+                  data-download-url="media/original/Men_12/IMG_1245.JPG"
+                  
+                  data-filename="IMG_1245.JPG"
+            
+                >
+                <a href="media/original/Men_12/IMG_1245.JPG">
+                  <img src="media/thumbs/Men_12/IMG_1245.JPG"
+                       width="120"
+                       height="120"
+                       alt="IMG_1245.JPG" />
+                </a>
+              </li>        
+              <li data-src="media/large/Men_12/IMG_1426.JPG"
+                  data-sub-html=""
+                  data-download-url="media/original/Men_12/IMG_1426.JPG"
+                  
+                  data-filename="IMG_1426.JPG"
+            
+                >
+                <a href="media/original/Men_12/IMG_1426.JPG">
+                  <img src="media/thumbs/Men_12/IMG_1426.JPG"
+                       width="120"
+                       height="120"
+                       alt="IMG_1426.JPG" />
+                </a>
+              </li>        
+              <li data-src="media/large/Men_12/IMG_1509.JPG"
+                  data-sub-html=""
+                  data-download-url="media/original/Men_12/IMG_1509.JPG"
+                  
+                  data-filename="IMG_1509.JPG"
+            
+                >
+                <a href="media/original/Men_12/IMG_1509.JPG">
+                  <img src="media/thumbs/Men_12/IMG_1509.JPG"
+                       width="120"
+                       height="120"
+                       alt="IMG_1509.JPG" />
+                </a>
+              </li>        
+              <li data-src="media/large/Men_12/IMG_1568.JPG"
+                  data-sub-html=""
+                  data-download-url="media/original/Men_12/IMG_1568.JPG"
+                  
+                  data-filename="IMG_1568.JPG"
+            
+                >
+                <a href="media/original/Men_12/IMG_1568.JPG">
+                  <img src="media/thumbs/Men_12/IMG_1568.JPG"
+                       width="120"
+                       height="120"
+                       alt="IMG_1568.JPG" />
+                </a>
+              </li>        
+              <li data-src="media/large/Men_12/IMG_1629.JPG"
+                  data-sub-html=""
+                  data-download-url="media/original/Men_12/IMG_1629.JPG"
+                  
+                  data-filename="IMG_1629.JPG"
+            
+                >
+                <a href="media/original/Men_12/IMG_1629.JPG">
+                  <img src="media/thumbs/Men_12/IMG_1629.JPG"
+                       width="120"
+                       height="120"
+                       alt="IMG_1629.JPG" />
+                </a>
+              </li>        
+              <li data-src="media/large/Men_12/IMG_1707.JPG"
+                  data-sub-html=""
+                  data-download-url="media/original/Men_12/IMG_1707.JPG"
+                  
+                  data-filename="IMG_1707.JPG"
+            
+                >
+                <a href="media/original/Men_12/IMG_1707.JPG">
+                  <img src="media/thumbs/Men_12/IMG_1707.JPG"
+                       width="120"
+                       height="120"
+                       alt="IMG_1707.JPG" />
+                </a>
+              </li>        
+              <li data-src="media/large/Men_12/IMG_1879.JPG"
+                  data-sub-html=""
+                  data-download-url="media/original/Men_12/IMG_1879.JPG"
+                  
+                  data-filename="IMG_1879.JPG"
+            
+                >
+                <a href="media/original/Men_12/IMG_1879.JPG">
+                  <img src="media/thumbs/Men_12/IMG_1879.JPG"
+                       width="120"
+                       height="120"
+                       alt="IMG_1879.JPG" />
+                </a>
+              </li>        
+              <li data-src="media/large/Men_12/IMG_1890.JPG"
+                  data-sub-html=""
+                  data-download-url="media/original/Men_12/IMG_1890.JPG"
+                  
+                  data-filename="IMG_1890.JPG"
+            
+                >
+                <a href="media/original/Men_12/IMG_1890.JPG">
+                  <img src="media/thumbs/Men_12/IMG_1890.JPG"
+                       width="120"
+                       height="120"
+                       alt="IMG_1890.JPG" />
+                </a>
+              </li>        
+              <li data-src="media/large/Men_12/IMG_E7883.JPG"
+                  data-sub-html=""
+                  data-download-url="media/original/Men_12/IMG_E7883.JPG"
+                  
+                  data-filename="IMG_E7883.JPG"
+            
+                >
+                <a href="media/original/Men_12/IMG_E7883.JPG">
+                  <img src="media/thumbs/Men_12/IMG_E7883.JPG"
+                       width="120"
+                       height="120"
+                       alt="IMG_E7883.JPG" />
+                </a>
+              </li>    </ul>
     
-    <!--
-      Zip file link
-    -->
+        <!--
+          Pagination
+        -->
     
+        <!--
+          Zip file link
+        -->
     
-    <!--
-      Optional footer
-    -->
-    <footer>
-      <p>Copyright Text</p>
-    </footer>
+      </section>
+    
+      <!--
+        Optional footer
+      -->
+      <footer>
+        <p>Copyright Text</p>
+      </footer>
+    
+    </div>
     <!-- Video loader -->
     <div id="videos">
     </div>

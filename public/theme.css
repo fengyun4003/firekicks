@@ -2,112 +2,171 @@
   box-sizing: border-box;
   -moz-box-sizing: border-box;
 }
+html {
+  height: 100%;
+}
 html,
 body {
   padding: 0;
   margin: 0;
 }
 body {
-  border-top: 5px solid #33609c;
+  background: #fff;
+  color: #444;
   font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: lighter;
-  margin: 0 1em 1em 1em;
-  padding: 0 1em;
-  -webkit-font-smoothing: antialiased;
-}
-header {
-  font-size: 2em;
-  padding: 1em 0;
-  margin-bottom: 0.5em;
-}
-h1 {
-  color: #33609c;
-  display: inline-block;
-  font-weight: bold;
-}
-h2 {
-  color: #666;
-  display: inline-block;
-}
-h3 {
-  color: #33609c;
-  margin-bottom: 0.1em;
-  font-size: 1.3em;
+  margin-bottom: 1em;
 }
 a {
   text-decoration: none;
 }
-nav.breadcrumbs {
-  border-top: 1px solid #bbb;
-  border-bottom: 1px solid #bbb;
-  margin-bottom: 2.3em;
-  padding: 1em 0;
+.clearfix:after {
+  content: " ";
+  display: block;
+  clear: both;
 }
-nav.breadcrumbs li {
+.noselect {
+  cursor: default;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+header {
+  color: #17baef;
+  font-size: 1.4em;
+  font-family: 'Montserrat', sans-serif;
+  padding: 0;
+}
+h1 {
+  margin: 1em;
   display: inline-block;
 }
-nav.breadcrumbs a {
-  color: #666;
-  display: inline-block;
-  padding: 0.4em 1em;
-  text-decoration: none;
-  background-color: #33609c;
-  color: #fff;
-  font-weight: bold;
-}
-nav.breadcrumbs li.active {
-  background-color: #bbb;
-}
-nav.breadcrumbs li.active a {
-  color: #fff;
-  font-weight: bold;
-}
-nav.breadcrumbs li:not(.active):hover {
-  background-color: #eee;
+h1 a {
+  color: #17baef;
 }
 footer {
-  color: #33609c;
-  font-size: 0.9em;
+  border-top: 1px solid #17baef;
+  color: #17baef;
+  font-size: 0.8em;
   font-style: italic;
-  margin-top: 2em;
+  margin-left: 2em;
+  margin-top: 3em;
+  padding-top: 0.5em;
 }
 footer a {
-  color: #000;
+  color: #555;
 }
-#galleries a {
+nav.breadcrumbs {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 1.5em;
+  font-weight: bold;
+  height: 4em;
+  background: url('hero.jpg') center center repeat;
+  background-size: contain;
+  color: #fff;
+  position: relative;
+}
+nav.breadcrumbs .mask {
+  background-color: #17baef;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.9;
+  z-index: 1;
+}
+nav.breadcrumbs a,
+nav span {
+  position: relative;
+  z-index: 2;
+  display: inline;
+}
+nav.breadcrumbs a {
+  color: #fff;
+  text-decoration: none;
+}
+nav.breadcrumbs .separator {
+  color: #fff;
   display: inline-block;
+  margin: 0 0.5em;
 }
-#galleries .meta {
+#content {
+  padding: 2em;
+}
+#albums {
+  margin-bottom: 2em;
+  overflow: hidden;
+}
+#albums a {
+  display: inline-block;
+  margin-right: 0.5em;
+}
+#albums h3 {
+  color: #444;
+  margin-top: 1em;
+  font-size: 1em;
+}
+#albums .meta {
+  color: #999;
   font-size: 0.9em;
-  width: 100%;
-  margin: 0.5em 0;
-  color: #666;
+  font-style: italic;
   line-height: 1.2em;
-}
-#galleries > li {
-  display: inline-block;
-  margin-right: 2em;
-  margin-bottom: 3em;
-}
-#galleries .grid {
-  width: 200px;
-}
-#galleries .grid li {
-  float: left;
-  padding: 0 0.2em 0.2em 0;
-  width: 50%;
-}
-#galleries .grid img {
-  display: block;
+  margin: 0.5em 0;
   width: 100%;
+}
+#albums > li {
+  display: inline-block;
+  margin-right: 1em;
+  margin-bottom: 0em;
+}
+#albums .grid {
+  opacity: 0.9;
+  width: 360px;
+  height: 60px;
+  overflow: hidden;
+}
+#albums .mosaic {
+  width: 360px;
+  opacity: 0.9;
+  overflow: hidden;
+}
+#albums .grid li {
+  float: left;
+  padding: 0;
+  padding-right: 0px;
+  padding-bottom: 0px;
+}
+#albums .grid img {
+  display: block;
+  height: 60px;
+  width: 60px;
+}
+@media only screen and (max-width: 450px) {
+  #albums .meta .separator {
+    display: none;
+  }
+  #albums .meta .summary {
+    display: block;
+  }
 }
 #media {
   margin-bottom: 2em;
 }
+#media:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 #media li {
-  display: inline-block;
-  margin-right: 0.2em;
+  float: left;
+  margin-right: 0.4em;
   margin-bottom: 0.2em;
   position: relative;
 }
@@ -123,7 +182,7 @@ footer a {
 nav.pagination {
   color: #666;
   display: inline-block;
-  margin-top: 1em;
+  font-size: 1em;
   padding: 0em 0em 0.5em 0em;
 }
 nav.pagination .page {

@@ -14,130 +14,144 @@
 
   <body>
 
-    <header>
-      <a href="index.html">
-        <h1>Photo Gallery</h1>
-      </a>
-    </header>
+    <div>
     
-    <!--
-      Breadcrumbs of parent albums
-    -->
+      <!--
+        Gallery title
+      -->
+      <header style="color: #17baef;">
+        <h1><a href="index.html">Photo Gallery</a></h1>
+      </header>
+    
+      <!--
+        Breadcrumbs of parent albums
+      -->
+    
       <nav class="breadcrumbs">
-    <a class="breadcrumb-item" href="index.html">Home</a>&nbsp;&nbsp;/&nbsp;&nbsp;<a class="breadcrumb-item" href="45Y-&#x3D;-Women-6.html">4.5Y &#x3D; Women 6</a>
+        <div class="mask"></div>
+    <a class="breadcrumb-item" href="index.html">Home</a>
+          <span class="separator">&gt;</span><a class="breadcrumb-item" href="45Y-&#x3D;-Women-6.html">4.5Y &#x3D; Women 6</a>
       </nav>
     
-    <!--
-      Nested albums
-    -->
-    <ul id="galleries">
-    </ul>
+      <!--
+        Main gallery panel
+      -->
+      <section id="content">
     
-    <!--
-      Render all thumbnails
-    -->
-    <ul id="media">
-        
-          <li data-src="media/large/4.5Y%20&#x3D;%20Women%206/IMG_1882.JPG"
-              data-sub-html=""
-              data-download-url="media/original/4.5Y%20&#x3D;%20Women%206/IMG_1882.JPG"
-              
-              data-filename="IMG_1882.JPG"
-        
-            >
-            <a href="media/original/4.5Y%20&#x3D;%20Women%206/IMG_1882.JPG">
-              <img src="media/thumbs/4.5Y%20&#x3D;%20Women%206/IMG_1882.JPG"
-                   width="120"
-                   height="120"
-                   alt="IMG_1882.JPG" />
-            </a>
-          </li>    
-          <li data-src="media/large/4.5Y%20&#x3D;%20Women%206/IMG_9133.JPG"
-              data-sub-html=""
-              data-download-url="media/original/4.5Y%20&#x3D;%20Women%206/IMG_9133.JPG"
-              
-              data-filename="IMG_9133.JPG"
-        
-            >
-            <a href="media/original/4.5Y%20&#x3D;%20Women%206/IMG_9133.JPG">
-              <img src="media/thumbs/4.5Y%20&#x3D;%20Women%206/IMG_9133.JPG"
-                   width="120"
-                   height="120"
-                   alt="IMG_9133.JPG" />
-            </a>
-          </li>    
-          <li data-src="media/large/4.5Y%20&#x3D;%20Women%206/IMG_9499.JPG"
-              data-sub-html=""
-              data-download-url="media/original/4.5Y%20&#x3D;%20Women%206/IMG_9499.JPG"
-              
-              data-filename="IMG_9499.JPG"
-        
-            >
-            <a href="media/original/4.5Y%20&#x3D;%20Women%206/IMG_9499.JPG">
-              <img src="media/thumbs/4.5Y%20&#x3D;%20Women%206/IMG_9499.JPG"
-                   width="120"
-                   height="120"
-                   alt="IMG_9499.JPG" />
-            </a>
-          </li>    
-          <li data-src="media/large/4.5Y%20&#x3D;%20Women%206/IMG_9545.JPG"
-              data-sub-html=""
-              data-download-url="media/original/4.5Y%20&#x3D;%20Women%206/IMG_9545.JPG"
-              
-              data-filename="IMG_9545.JPG"
-        
-            >
-            <a href="media/original/4.5Y%20&#x3D;%20Women%206/IMG_9545.JPG">
-              <img src="media/thumbs/4.5Y%20&#x3D;%20Women%206/IMG_9545.JPG"
-                   width="120"
-                   height="120"
-                   alt="IMG_9545.JPG" />
-            </a>
-          </li>    
-          <li data-src="media/large/4.5Y%20&#x3D;%20Women%206/IMG_9631.JPG"
-              data-sub-html=""
-              data-download-url="media/original/4.5Y%20&#x3D;%20Women%206/IMG_9631.JPG"
-              
-              data-filename="IMG_9631.JPG"
-        
-            >
-            <a href="media/original/4.5Y%20&#x3D;%20Women%206/IMG_9631.JPG">
-              <img src="media/thumbs/4.5Y%20&#x3D;%20Women%206/IMG_9631.JPG"
-                   width="120"
-                   height="120"
-                   alt="IMG_9631.JPG" />
-            </a>
-          </li>    
-          <li data-src="media/large/4.5Y%20&#x3D;%20Women%206/IMG_9779.JPG"
-              data-sub-html=""
-              data-download-url="media/original/4.5Y%20&#x3D;%20Women%206/IMG_9779.JPG"
-              
-              data-filename="IMG_9779.JPG"
-        
-            >
-            <a href="media/original/4.5Y%20&#x3D;%20Women%206/IMG_9779.JPG">
-              <img src="media/thumbs/4.5Y%20&#x3D;%20Women%206/IMG_9779.JPG"
-                   width="120"
-                   height="120"
-                   alt="IMG_9779.JPG" />
-            </a>
-          </li></ul>
+        <!--
+          Nested albums, if any
+        -->
+        <ul id="albums">
+        </ul>
     
-    <!--
-      Pagination
-    -->
+        <!--
+          All photos and videos
+        -->
+        <ul id="media">
+            
+              <li data-src="media/large/4.5Y%20&#x3D;%20Women%206/IMG_1882.JPG"
+                  data-sub-html=""
+                  data-download-url="media/original/4.5Y%20&#x3D;%20Women%206/IMG_1882.JPG"
+                  
+                  data-filename="IMG_1882.JPG"
+            
+                >
+                <a href="media/original/4.5Y%20&#x3D;%20Women%206/IMG_1882.JPG">
+                  <img src="media/thumbs/4.5Y%20&#x3D;%20Women%206/IMG_1882.JPG"
+                       width="120"
+                       height="120"
+                       alt="IMG_1882.JPG" />
+                </a>
+              </li>        
+              <li data-src="media/large/4.5Y%20&#x3D;%20Women%206/IMG_9133.JPG"
+                  data-sub-html=""
+                  data-download-url="media/original/4.5Y%20&#x3D;%20Women%206/IMG_9133.JPG"
+                  
+                  data-filename="IMG_9133.JPG"
+            
+                >
+                <a href="media/original/4.5Y%20&#x3D;%20Women%206/IMG_9133.JPG">
+                  <img src="media/thumbs/4.5Y%20&#x3D;%20Women%206/IMG_9133.JPG"
+                       width="120"
+                       height="120"
+                       alt="IMG_9133.JPG" />
+                </a>
+              </li>        
+              <li data-src="media/large/4.5Y%20&#x3D;%20Women%206/IMG_9499.JPG"
+                  data-sub-html=""
+                  data-download-url="media/original/4.5Y%20&#x3D;%20Women%206/IMG_9499.JPG"
+                  
+                  data-filename="IMG_9499.JPG"
+            
+                >
+                <a href="media/original/4.5Y%20&#x3D;%20Women%206/IMG_9499.JPG">
+                  <img src="media/thumbs/4.5Y%20&#x3D;%20Women%206/IMG_9499.JPG"
+                       width="120"
+                       height="120"
+                       alt="IMG_9499.JPG" />
+                </a>
+              </li>        
+              <li data-src="media/large/4.5Y%20&#x3D;%20Women%206/IMG_9545.JPG"
+                  data-sub-html=""
+                  data-download-url="media/original/4.5Y%20&#x3D;%20Women%206/IMG_9545.JPG"
+                  
+                  data-filename="IMG_9545.JPG"
+            
+                >
+                <a href="media/original/4.5Y%20&#x3D;%20Women%206/IMG_9545.JPG">
+                  <img src="media/thumbs/4.5Y%20&#x3D;%20Women%206/IMG_9545.JPG"
+                       width="120"
+                       height="120"
+                       alt="IMG_9545.JPG" />
+                </a>
+              </li>        
+              <li data-src="media/large/4.5Y%20&#x3D;%20Women%206/IMG_9631.JPG"
+                  data-sub-html=""
+                  data-download-url="media/original/4.5Y%20&#x3D;%20Women%206/IMG_9631.JPG"
+                  
+                  data-filename="IMG_9631.JPG"
+            
+                >
+                <a href="media/original/4.5Y%20&#x3D;%20Women%206/IMG_9631.JPG">
+                  <img src="media/thumbs/4.5Y%20&#x3D;%20Women%206/IMG_9631.JPG"
+                       width="120"
+                       height="120"
+                       alt="IMG_9631.JPG" />
+                </a>
+              </li>        
+              <li data-src="media/large/4.5Y%20&#x3D;%20Women%206/IMG_9779.JPG"
+                  data-sub-html=""
+                  data-download-url="media/original/4.5Y%20&#x3D;%20Women%206/IMG_9779.JPG"
+                  
+                  data-filename="IMG_9779.JPG"
+            
+                >
+                <a href="media/original/4.5Y%20&#x3D;%20Women%206/IMG_9779.JPG">
+                  <img src="media/thumbs/4.5Y%20&#x3D;%20Women%206/IMG_9779.JPG"
+                       width="120"
+                       height="120"
+                       alt="IMG_9779.JPG" />
+                </a>
+              </li>    </ul>
     
-    <!--
-      Zip file link
-    -->
+        <!--
+          Pagination
+        -->
     
+        <!--
+          Zip file link
+        -->
     
-    <!--
-      Optional footer
-    -->
-    <footer>
-      <p>Copyright Text</p>
-    </footer>
+      </section>
+    
+      <!--
+        Optional footer
+      -->
+      <footer>
+        <p>Copyright Text</p>
+      </footer>
+    
+    </div>
     <!-- Video loader -->
     <div id="videos">
     </div>
